@@ -1,5 +1,7 @@
 # ITnetworkProject
 
+http://lmsotfy.com/so.png
+
 ![alt text](http://lmsotfy.com/so.png)
 
 fsdfsd
