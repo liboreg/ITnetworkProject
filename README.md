@@ -1,8 +1,7 @@
 # ITnetworkProject
+# Podpora prodeje online kurzů
 
-http://lmsotfy.com/so.png
-
-![alt text](http://lmsotfy.com/so.png)
+![so](http://lmsotfy.com/so.png)
 
 fsdfsd
 sd
