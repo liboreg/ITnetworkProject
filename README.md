@@ -1,3 +1,3 @@
 # ITnetworkProject
 
-![alt text](http://url/to/test.png)
+![alt text](http://lmsotfy.com/so.png)
