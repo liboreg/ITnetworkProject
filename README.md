@@ -17,7 +17,7 @@ Struktura tabulky pro registrační formulář:
 ![subCourses.png](img/subCourses.png)
 
 
-Vytváření objednávek a faktur: https://github.com/liboreg/ITnetworkProject/blob/main/js/Invoice.js
+[Vytváření objednávek a faktur](js/Invoice.js)
 
 Třída Invoice obsahuje tyto metody:
 - **creEstimate** - vytvoření objednávky 
