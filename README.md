@@ -30,6 +30,6 @@ Obě používají metodu create ( jen s jinými parametry )
 Kód pro zpracování bankovních transakcí: https://github.com/liboreg/ITnetworkProject/blob/main/js/BankTransactions.js
 
 Třída BankTransactions obsahuje tyto metody
-- **fetchData**
-- **saveData**
-- a **matchPayments**
+- **fetchData** - načtění bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
+- **saveData** - uložení dat do tabulky eshop_bankTransactions
+- a **matchPayments** - spárování dat na základě variabilního symbolu a vytvoření objednávky
