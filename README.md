@@ -11,3 +11,5 @@ https://www.ivetahavlova.cz/prihlaska-na-kurz
 
 Po zvolení druhé volby se formulář rozšíří o kompletní informace:
 ![prihlaska_na_kurz-full.png](https://github.com/liboreg/ITnetworkProject/blob/main/img/prihlaska_na_kurz-full.png)
+
+Vytváření objednávek a faktur: https://github.com/liboreg/ITnetworkProject/blob/main/js/Invoice.js
