@@ -1,5 +1,5 @@
 # ITnetworkProject
-# Podpora prodeje online kurzů
+## Podpora prodeje online kurzů
 
 Aplikace slouží k podpoře registrace na online kurzy, které probíhají online na platformě Zoom, později přibude možnost prodeje nahrávek.
 
@@ -16,11 +16,20 @@ Struktura tabulky pro registrační formulář:
 
 ![subCourses.png](https://github.com/liboreg/ITnetworkProject/blob/main/img/subCourses.png)
 
+
 Vytváření objednávek a faktur: https://github.com/liboreg/ITnetworkProject/blob/main/js/Invoice.js
 
-Třída Invoice obsahuje metody creEstimate ( vytvoření objednávky ) a creVat ( vytvoření faktury ).
-Obě používají metodu create ( jen s jinými parametry ) a metodu createLoop ( pro ctění přístupu DRY, Dont Repeat Yourself )
+Třída Invoice obsahuje tyto metody:
+- **creEstimate** - vytvoření objednávky 
+- **creVat** - vytvoření faktury
+
+Obě používají metodu create ( jen s jinými parametry )
+- a **createLoop** - pro ctění přístupu DRY, Dont Repeat Yourself
+
 
 Kód pro zpracování bankovních transakcí: https://github.com/liboreg/ITnetworkProject/blob/main/js/BankTransactions.js
 
-Třída BankTransactions obsahuje metody fetchData, saveData a matchPayments.
+Třída BankTransactions obsahuje tyto metody
+- **fetchData**
+- **saveData**
+- a **matchPayments**
