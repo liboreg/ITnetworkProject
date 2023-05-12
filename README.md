@@ -17,3 +17,6 @@ Struktura tabulky pro registrační formulář:
 ![subCourses.png](https://github.com/liboreg/ITnetworkProject/blob/main/img/subCourses.png)
 
 Vytváření objednávek a faktur: https://github.com/liboreg/ITnetworkProject/blob/main/js/Invoice.js
+
+Obsahuje metody creEstimate ( vytvoření objednávky ) a creVat ( vytvoření faktury ).
+Obě používají metodu create ( jen s jinými parametry ) a metodu createLoop ( pro ctění přístupu DRY, Dont Repeat Yourself )
