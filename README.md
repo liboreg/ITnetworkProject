@@ -18,5 +18,9 @@ Struktura tabulky pro registrační formulář:
 
 Vytváření objednávek a faktur: https://github.com/liboreg/ITnetworkProject/blob/main/js/Invoice.js
 
-Obsahuje metody creEstimate ( vytvoření objednávky ) a creVat ( vytvoření faktury ).
+Třída Invoice obsahuje metody creEstimate ( vytvoření objednávky ) a creVat ( vytvoření faktury ).
 Obě používají metodu create ( jen s jinými parametry ) a metodu createLoop ( pro ctění přístupu DRY, Dont Repeat Yourself )
+
+Kód pro zpracování bankovních transakcí: https://github.com/liboreg/ITnetworkProject/blob/main/js/BankTransactions.js
+
+Třída BankTransactions obsahuje metody fetchData, saveData a matchPayments.
