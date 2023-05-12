@@ -17,7 +17,7 @@ Struktura tabulky pro registrační formulář:
 ![subCourses.png](img/subCourses.png)
 
 
-[Vytváření objednávek a faktur](js/Invoice.js)
+[Kód pro vytváření objednávek a faktur](js/Invoice.js)
 
 Třída Invoice obsahuje tyto metody:
 - **creEstimate** - vytvoření objednávky 
@@ -27,7 +27,7 @@ Obě používají metodu create ( jen s jinými parametry )
 - a **createLoop** - pro ctění přístupu DRY, Dont Repeat Yourself
 
 
-Kód pro zpracování bankovních transakcí: https://github.com/liboreg/ITnetworkProject/blob/main/js/BankTransactions.js
+[Kód pro zpracování bankovních transakcí](js/BankTransactions.js)
 
 Třída BankTransactions obsahuje tyto metody
 - **fetchData** - načtění bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
