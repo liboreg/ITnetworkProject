@@ -6,14 +6,6 @@ Aplikace slouží k podpoře registrace na online kurzy, které probíhají onli
 Registrační formulář je zde:
 
 https://www.ivetahavlova.cz/prihlaska-na-kurz
+![prihlaska_na_kurz-jen_ukazkove.png](https://github.com/liboreg/ITnetworkProject/blob/main/prihlaska_na_kurz-jen_ukazkove.png)
 
-
-![so](http://lmsotfy.com/so.png)
-
-fsdfsd
-sd
-
-![alt text](https://github.com/liboreg/ITnetworkProject/blob/main/test.png)
-
-fsdfsd
-sd
+Po zvolení druhé volby se formulář rozšíří o kompletní informace:
