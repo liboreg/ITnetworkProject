@@ -12,12 +12,11 @@ https://www.ivetahavlova.cz/prihlaska-na-kurz
 Po zvolení druhé volby se formulář rozšíří o kompletní informace:
 ![prihlaska_na_kurz-full.png](img/prihlaska_na_kurz-full.png)
 
-Struktura tabulky pro registrační formulář:
-
+### Struktura tabulky pro registrační formulář:
 ![subCourses.png](img/subCourses.png)
 
 
-Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
+## Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
 
 Třída Invoice obsahuje tyto metody:
 - **creEstimate** - vytvoření objednávky 
@@ -26,9 +25,9 @@ Třída Invoice obsahuje tyto metody:
 Obě používají metodu create ( jen s jinými parametry )
 - a **createLoop** - pro ctění přístupu DRY, Dont Repeat Yourself
 
-Soubor [js/invoice.jsw](js/invoice.jsw) obsahuje vytvoření nové instance třídy Invoice a funkce pro volání z frontendu
+### Soubor [js/invoice.jsw](js/invoice.jsw) obsahuje vytvoření nové instance třídy Invoice a funkce pro volání z frontendu
 
-Kód pro zpracování bankovních transakcí - [js/BankTransactions.js](js/BankTransactions.js)
+## Kód pro zpracování bankovních transakcí - [js/BankTransactions.js](js/BankTransactions.js)
 
 Třída BankTransactions obsahuje tyto metody
 - **fetchData** - načtění bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
