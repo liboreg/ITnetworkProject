@@ -26,11 +26,11 @@ Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů
 ## Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
 
 Třída Invoice obsahuje tyto metody:
-- **creEstimate** - vytvoření objednávky 
-- **creVat** - vytvoření faktury
+- **creEstimate(courseID, approvedOrders, comm, dept)** - vytvoření objednávky 
+- **creVat**(courseID, prefix, vs, comm, dept, i_sell_date) - vytvoření faktury
 
 Obě používají metodu create ( jen s jinými parametry )
-- a **createLoop** - pro ctění přístupu DRY, Dont Repeat Yourself
+- a **createLoop(v_subCoursesData, typ, dept, status, vs, prefix, i_sell_date, comm)** - pro ctění přístupu DRY, Dont Repeat Yourself
 
 ### Soubor [js/invoice.jsw](js/invoice.jsw) obsahuje vytvoření nové instance třídy Invoice a funkce pro volání z frontendu
 
