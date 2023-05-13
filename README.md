@@ -36,5 +36,7 @@ Třída BankTransactions obsahuje tyto metody
 - **saveData** - uložení dat do tabulky eshop_bankTransactions
 - a **matchPayments** - spárování dat na základě variabilního symbolu a vytvoření objednávky
 
+## Modul s SQL příkazy - [js/datasql.jsw](js/datasql.jsw)
+
 ### Struktura tabulky pro bankovní transakce:
 ![eshop_bankTransactions.png](img/eshop_bankTransactions.png)
