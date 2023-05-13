@@ -27,7 +27,7 @@ Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů
 
 Třída Invoice obsahuje tyto metody:
 - **creEstimate(courseID, approvedOrders, comm, dept)** - vytvoření objednávky 
-- **creVat**(courseID, prefix, vs, comm, dept, i_sell_date) - vytvoření faktury
+- **creVat(courseID, prefix, vs, comm, dept, i_sell_date)** - vytvoření faktury
 
 Obě používají metodu create ( jen s jinými parametry )
 - a **createLoop(v_subCoursesData, typ, dept, status, vs, prefix, i_sell_date, comm)** - pro ctění přístupu DRY, Dont Repeat Yourself
@@ -37,9 +37,9 @@ Obě používají metodu create ( jen s jinými parametry )
 ## Kód pro zpracování bankovních transakcí - [js/BankTransactions.js](js/BankTransactions.js)
 
 Třída BankTransactions obsahuje tyto metody
-- **fetchData** - načtění bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
-- **saveData** - uložení dat do tabulky eshop_bankTransactions
-- a **matchPayments** - spárování dat na základě variabilního symbolu a vytvoření objednávky
+- **fetchData(nameAPI, dateFrom, dateTo)** - načtění bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
+- **saveData(nameAPI, dateFrom, dateTo, state)** - uložení dat do tabulky eshop_bankTransactions
+- a **matchPayments(courseID, prefix, comm, dept)** - spárování dat na základě variabilního symbolu a vytvoření objednávky
 
 ### Soubor [js/bankTransactions.jsw](js/bankTransactions.jsw) obsahuje vytvoření nové instance třídy BankTransactions a funkce pro volání z frontendu
 
