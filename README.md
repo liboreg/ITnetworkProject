@@ -37,7 +37,8 @@ Obě používají metodu create ( jen s jinými parametry )
 ## Kód pro zpracování bankovních transakcí - [js/BankTransactions.js](js/BankTransactions.js)
 
 Třída BankTransactions obsahuje tyto metody
-- **fetchData(nameAPI, dateFrom, dateTo)** - načtění bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
+- **fetchData(nameAPI, dateFrom, dateTo)**
+  - načtení bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
 - **saveData(nameAPI, dateFrom, dateTo, state)** - uložení dat do tabulky eshop_bankTransactions
 - a **matchPayments(courseID, prefix, comm, dept)** - spárování dat na základě variabilního symbolu a vytvoření objednávky
 
