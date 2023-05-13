@@ -9,7 +9,7 @@ Registrační formulář je zde:
 https://www.ivetahavlova.cz/prihlaska-na-kurz
 ![prihlaska_na_kurz-jen_ukazkove.png](img/prihlaska_na_kurz-jen_ukazkove.png)
 
-Po zvolení druhé volby se formulář rozšíří o kompletní informace:
+Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů potřebných pro fakturaci:
 ![prihlaska_na_kurz-full.png](img/prihlaska_na_kurz-full.png)
 
 ### Struktura tabulky pro registrační formulář:
