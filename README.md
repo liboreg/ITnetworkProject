@@ -35,3 +35,6 @@ Třída BankTransactions obsahuje tyto metody
 - **fetchData** - načtění bankovních transakcí přes API ( klíč je uchován skryt v Secret Managerovi ve Wixu )
 - **saveData** - uložení dat do tabulky eshop_bankTransactions
 - a **matchPayments** - spárování dat na základě variabilního symbolu a vytvoření objednávky
+
+### Struktura tabulky pro bankovní transakce:
+![eshop_bankTransactions.png](img/eshop_bankTransactions.png)
