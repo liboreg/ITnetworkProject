@@ -1,7 +1,11 @@
 # ITnetworkProject
 ## Podpora prodeje online kurzů
 
-Aplikace slouží k podpoře registrace na online kurzy, které probíhají online na platformě Zoom, později přibude možnost prodeje nahrávek.
+Aplikace slouží k podpoře registrace na online kurzy, které probíhají na platformě Zoom.
+Zatím je možné zakoupit si účast na živém vysílání, později přibude možnost prodeje už hotových nahrávek.
+
+Pro vytváření objednávek a faktur je využíváno API služby BitFaktura.
+A pro zjišťování plateb se využívá připojení přes API klíč do Fio banky.
 
 Registrační formulář je zde:
 ( vytvářel jsem jej ve FrameWorku Wix )
@@ -16,6 +20,7 @@ Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů
 ![subCourses.png](img/subCourses.png)
 
 ### Přihláška na kurz - přehled
+( opět jsem vytvářel ve frameworku Wix )
 ![prihlaska_na_kurz-prehled.png](img/prihlaska_na_kurz-prehled.png)
 
 ## Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
@@ -38,11 +43,10 @@ Třída BankTransactions obsahuje tyto metody
 
 ### Soubor [js/bankTransactions.jsw](js/bankTransactions.jsw) obsahuje vytvoření nové instance třídy BankTransactions a funkce pro volání z frontendu
 
-## Modul s SQL příkazy - [js/datasql.jsw](js/datasql.jsw)
+## Modul s SQL příkazy a práci s daty - [js/datasql.jsw](js/datasql.jsw)
 
 ### Struktura tabulky pro bankovní transakce:
 ![eshop_bankTransactions.png](img/eshop_bankTransactions.png)
 
 ### Struktura tabulky pro logování chyb:
 ![errorLog.png](img/errorLog.png)
-
