@@ -16,9 +16,6 @@ https://www.ivetahavlova.cz/prihlaska-na-kurz
 Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů potřebných pro fakturaci:
 ![prihlaska_na_kurz-full.png](img/prihlaska_na_kurz-full.png)
 
-### Struktura tabulky pro registrační formulář:
-![subCourses.png](img/subCourses.png)
-
 ### Přihláška na kurz - přehled
 ( opět jsem vytvářel ve frameworku Wix )
 ![prihlaska_na_kurz-prehled.png](img/prihlaska_na_kurz-prehled.png)
@@ -65,8 +62,13 @@ Třída BankTransactions obsahuje tyto metody
 - **async function getBankMovements(state)**
   - vrátí bankovní transkace podle stavu ( typicky loaded, se kterými se dále pracuje ve funkcích fetchData, saveData a matchPayments )
 
-### Struktura tabulky pro bankovní transakce:
+## Struktura tabulek
+
+### Registrační formulář:
+![subCourses.png](img/subCourses.png)
+
+### Bankovní transakce:
 ![eshop_bankTransactions.png](img/eshop_bankTransactions.png)
 
-### Struktura tabulky pro logování chyb:
+### Logování chyb:
 ![errorLog.png](img/errorLog.png)
