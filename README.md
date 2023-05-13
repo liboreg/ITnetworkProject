@@ -18,7 +18,6 @@ Po zvolení druhé volby se formulář rozšíří o kompletní informace:
 ### Přihláška na kurz - přehled
 ![prihlaska_na_kurz-prehled.png](img/prihlaska_na_kurz-prehled.png)
 
-
 ## Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
 
 Třída Invoice obsahuje tyto metody:
