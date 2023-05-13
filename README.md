@@ -44,6 +44,13 @@ Třída BankTransactions obsahuje tyto metody
 ### Soubor [js/bankTransactions.jsw](js/bankTransactions.jsw) obsahuje vytvoření nové instance třídy BankTransactions a funkce pro volání z frontendu
 
 ## Modul s SQL příkazy a práci s daty - [js/datasql.jsw](js/datasql.jsw)
+- async function logErr(moduleName, err)
+- function getDateF(days)
+- async function getSubCoursesData(courseID, email_prefix, priznak_VS)
+- async function updLastOrdNum(courseID, docNum, email)
+- async function updBankMovements(idPohybu_stateFrom, stateTo)
+- async function insBankTransactions(idPohybu, datum, objem, mena, nazevProtiuctu, vs, zpravaProPrijemce, stav)
+- async function getBankMovements(state)
 
 ### Struktura tabulky pro bankovní transakce:
 ![eshop_bankTransactions.png](img/eshop_bankTransactions.png)
