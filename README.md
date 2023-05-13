@@ -15,6 +15,9 @@ Po zvolení druhé volby se formulář rozšíří o kompletní informace:
 ### Struktura tabulky pro registrační formulář:
 ![subCourses.png](img/subCourses.png)
 
+### Přihláška na kurz - přehled
+![prihlaska_na_kurz-prehled.png](img/prihlaska_na_kurz-prehled.png)
+
 
 ## Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
 
