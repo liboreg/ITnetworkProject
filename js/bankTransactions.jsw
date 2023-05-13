@@ -1,0 +1,32 @@
+/*********
+ .jsw file
+ *********
+
+ Backend .jsw files contain functions that run on the server side but can be called from page code and frontend files.
+ Use backend functions to keep code private and hidden from a user's browser. More info:
+
+ https://support.wix.com/en/article/velo-web-modules-calling-backend-code-from-the-frontend
+
+**********/
+
+import { BankTransactions } from 'backend/courses/BankTransactions.js'
+
+let bankTransactions = new BankTransactions();
+
+export function        banktransactions_fetchData(nameAPI, dateFrom, dateTo) {
+        try {
+                return bankTransactions.fetchData(nameAPI, dateFrom, dateTo);
+        } catch (err) { console.error(err.stack)}
+}
+
+export function        banktransactions_saveData(nameAPI, dateFrom, dateTo, state) {
+        try {
+                return bankTransactions.saveData(nameAPI, dateFrom, dateTo, state);
+        } catch (err) { console.error(err.stack)}
+}
+
+export function        banktransactions_matchPayments(courseID, prefix, comm, dept) {
+        try {
+                return bankTransactions.matchPayments(courseID, prefix, comm, dept);
+        } catch (err) { console.error(err.stack)}
+}
