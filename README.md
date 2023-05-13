@@ -62,7 +62,7 @@ Třída BankTransactions obsahuje tyto metody
 - **async function getBankMovements(state)**
   - vrátí bankovní transkace podle stavu ( typicky loaded, se kterými se dále pracuje ve funkcích fetchData, saveData a matchPayments )
 
-## Struktura tabulek
+## Struktura DB tabulek
 
 ### Registrační formulář:
 ![subCourses.png](img/subCourses.png)
