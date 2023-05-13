@@ -20,7 +20,7 @@ Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů
 ( opět jsem vytvářel ve frameworku Wix )
 ![prihlaska_na_kurz-prehled.png](img/prihlaska_na_kurz-prehled.png)
 
-## Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
+## Modul pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
 
 Třída Invoice obsahuje tyto metody:
 - **async creEstimate(courseID, approvedOrders, comm, dept)**
@@ -32,9 +32,9 @@ Obě používají metodu create ( jen s jinými parametry )
 - **async createLoop(v_subCoursesData, typ, dept, status, vs, prefix, i_sell_date, comm)**
   - pro ctění přístupu DRY, Dont Repeat Yourself
 
-### Soubor [js/invoice.jsw](js/invoice.jsw) obsahuje vytvoření nové instance třídy Invoice a funkce pro volání z frontendu
+### Modul [js/invoice.jsw](js/invoice.jsw) obsahuje vytvoření nové instance třídy Invoice a funkce pro volání z frontendu
 
-## Kód pro zpracování bankovních transakcí - [js/BankTransactions.js](js/BankTransactions.js)
+## Modul pro zpracování bankovních transakcí - [js/BankTransactions.js](js/BankTransactions.js)
 
 Třída BankTransactions obsahuje tyto metody
 - **fetchData(nameAPI, dateFrom, dateTo)**
@@ -44,7 +44,7 @@ Třída BankTransactions obsahuje tyto metody
 - a **matchPayments(courseID, prefix, comm, dept)**
   - spárování dat na základě variabilního symbolu a vytvoření objednávky
 
-### Soubor [js/bankTransactions.jsw](js/bankTransactions.jsw) obsahuje vytvoření nové instance třídy BankTransactions a funkce pro volání z frontendu
+### Modul [js/bankTransactions.jsw](js/bankTransactions.jsw) obsahuje vytvoření nové instance třídy BankTransactions a funkce pro volání z frontendu
 
 ## Modul s SQL příkazy a práci s daty - [js/datasql.jsw](js/datasql.jsw)
 - **async function logErr(moduleName, err)**
