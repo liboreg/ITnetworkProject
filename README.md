@@ -26,13 +26,13 @@ Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů
 ## Kód pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
 
 Třída Invoice obsahuje tyto metody:
-- **creEstimate(courseID, approvedOrders, comm, dept)**
+- **async creEstimate(courseID, approvedOrders, comm, dept)**
   - vytvoření objednávky 
-- **creVat(courseID, prefix, vs, comm, dept, i_sell_date)**
+- **async creVat(courseID, prefix, vs, comm, dept, i_sell_date)**
   - vytvoření faktury
 
 Obě používají metodu create ( jen s jinými parametry )
-- **createLoop(v_subCoursesData, typ, dept, status, vs, prefix, i_sell_date, comm)**
+- **async createLoop(v_subCoursesData, typ, dept, status, vs, prefix, i_sell_date, comm)**
   - pro ctění přístupu DRY, Dont Repeat Yourself
 
 ### Soubor [js/invoice.jsw](js/invoice.jsw) obsahuje vytvoření nové instance třídy Invoice a funkce pro volání z frontendu
@@ -50,13 +50,20 @@ Třída BankTransactions obsahuje tyto metody
 ### Soubor [js/bankTransactions.jsw](js/bankTransactions.jsw) obsahuje vytvoření nové instance třídy BankTransactions a funkce pro volání z frontendu
 
 ## Modul s SQL příkazy a práci s daty - [js/datasql.jsw](js/datasql.jsw)
-- async function logErr(moduleName, err)
-- function getDateF(days)
-- async function getSubCoursesData(courseID, email_prefix, priznak_VS)
-- async function updLastOrdNum(courseID, docNum, email)
-- async function updBankMovements(idPohybu_stateFrom, stateTo)
-- async function insBankTransactions(idPohybu, datum, objem, mena, nazevProtiuctu, vs, zpravaProPrijemce, stav)
-- async function getBankMovements(state)
+- **async function logErr(moduleName, err)**
+  - logování chyb s názvem modulu a textem chyby
+- **function getDateF(days)**
+  - funkce vrátí formátovaný datum pro využití v práci s DB a API ( např. getdate(1) vrátí zítřejší datum ve formátu YYYY-MM-DD )
+- **async function getSubCoursesData(courseID, email_prefix, priznak_VS)**
+  - vrací řádky / řádek s daty registračního formuláře pro vytvoření objednávky/faktury
+- **async function updLastOrdNum(courseID, docNum, email)**
+  - pro aktualizaci posledního čísla objednávky
+- **async function updBankMovements(idPohybu_stateFrom, stateTo)**
+  - pro update stavu bankovní transakce buď podle jejího ID nebo stavu )
+- **async function insBankTransactions(idPohybu, datum, objem, mena, nazevProtiuctu, vs, zpravaProPrijemce, stav)**
+  - pro vložení řádku bankovní transakce ( používá se API fetch - funkce fetchData )
+- **async function getBankMovements(state)**
+  - vrátí bankovní transkace podle stavu ( typicky loaded, se kterými se dále pracuje ve funkcích fetchData, saveData a matchPayments )
 
 ### Struktura tabulky pro bankovní transakce:
 ![eshop_bankTransactions.png](img/eshop_bankTransactions.png)
