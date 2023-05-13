@@ -40,3 +40,7 @@ Třída BankTransactions obsahuje tyto metody
 
 ### Struktura tabulky pro bankovní transakce:
 ![eshop_bankTransactions.png](img/eshop_bankTransactions.png)
+
+### Struktura tabulky pro logování chyb:
+![errorLog.png](img/errorLog.png)
+
