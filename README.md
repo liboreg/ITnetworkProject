@@ -17,7 +17,7 @@ Po zvolení druhé volby se formulář rozšíří o kompletní zadání údajů
 ![prihlaska_na_kurz-full.png](img/prihlaska_na_kurz-full.png)
 
 ### Přihláška na kurz - přehled
-( opět jsem vytvářel ve frameworku Wix )
+( opět jsem vytvářel ve frameworku Wix - přístup jen pro roli admin )
 ![prihlaska_na_kurz-prehled.png](img/prihlaska_na_kurz-prehled.png)
 
 ## Modul pro vytváření objednávek a faktur - [js/Invoice.js](js/Invoice.js)
