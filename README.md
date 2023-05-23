@@ -75,4 +75,4 @@ Třída BankTransactions obsahuje tyto metody
 
 ### Na závěr
 Uvědomuji si, že ne všechny věci v tomto projektu jsou dokonale ošetřené.
-Plánuji tento projekt i nadále dolaďovat a rozšiřovat o další funkcionality
+Plánuji tento projekt i nadále dolaďovat a rozšiřovat o další funkcionality.
