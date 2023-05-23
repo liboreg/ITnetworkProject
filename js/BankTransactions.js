@@ -10,12 +10,6 @@ export class BankTransactions {
     // fetch data from bank API
     async fetchData(nameAPI, dateFrom, dateTo) {
 
-        /*
-        const moduleName = import.meta.url.split('/').pop();
-        const myElement = document.getElementById('body');
-        myElement.setAttribute('data-module', moduleName);
-        */
-
         const moduleName = moduleBankTransactions + 'fetchData()';
 
         /*
