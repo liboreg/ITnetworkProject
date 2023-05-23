@@ -1,17 +1,8 @@
 import wixSecretsBackend from 'wix-secrets-backend';
 import { getDateF, getSubCoursesData, logErr, updLastOrdNum } from 'backend/courses/datasql.jsw';
-//import wixData from 'wix-data';
 import {fetch} from 'wix-fetch';
 
 const moduleInvoice = 'backend/courses/Invoice.';
-
-/*
-// logovani do tabulky - this.name ?
-
-// webtrh.cz
-// freelance.com
-// ToDo: dependency injection ?
-*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -95,7 +86,9 @@ export class Invoice {
         console.log("view_url: " + data["view_url"]);
         let docNum = data["number"];
         //console.log('create: ordID: ' + docNum + ', ' + 'email: ' + email);
-        return {"docNum":docNum, "email":email};
+        if (docNum)
+            return {"docNum":docNum, "email":email};
+        else return false; 
         //return {"docNum":"O2023099","email":"liboreg@gmail.com"};
         //return 999;
         }
@@ -144,7 +137,6 @@ export class Invoice {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // create Order
-    // ToDo: updLastOrdNum(courseID, email, docnum)
     async creEstimate(courseID, approvedOrders, comm, dept) { 
 
     const moduleName = moduleInvoice + 'creEstimate()';
